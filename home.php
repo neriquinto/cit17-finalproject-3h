@@ -58,36 +58,6 @@ $reviews_result = $conn->query($reviews_query);
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-slider">
-            <?php
-            // Loop through the fetched reviews and create a testimonial card for each one
-            if ($reviews_result->num_rows > 0) {
-                while ($review = $reviews_result->fetch_assoc()) {
-                    $rating = $review['rating'];
-                    // Generate stars based on the rating
-                    $stars = str_repeat('⭐', $rating) . str_repeat('☆', 5 - $rating); // Display filled and empty stars
-                    echo '<div class="testimonial">';
-                    echo '<img src="client' . $review['users_id'] . '.jpg" alt="Client ' . $review['users_id'] . '">';
-                    echo '<p>"' . htmlspecialchars($review['comment']) . '"</p>';
-                    echo '<span>' . $stars . '</span>'; // Display the stars
-                    echo '<p>- Client ' . $review['users_id'] . '</p>';
-                    echo '</div>';
-                }
-            } else {
-                echo '<p>No testimonials available at the moment.</p>';
-            }
-            ?>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <h2>Ready to book your appointment?</h2>
-        <a href="booking.php" class="cta-btn">Book Now</a>
-    </section>
 
 </body>
 </html>
