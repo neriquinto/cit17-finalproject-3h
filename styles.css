@@ -1,0 +1,885 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #005f73;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/homebg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Services Overview */
+.services {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    width: 250px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #008CBA;
+    margin: 10px 0;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Call to Action */
+.cta {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* Signin and Login Page Styles */
+.form-container {
+    background-image: url('background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-box input[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-box input[type="submit"]:hover {
+    background-color: #005f73;
+}
+
+.inline {
+    display: inline;
+    font-size: 14px;
+}
+
+a {
+    color: #008CBA;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOR SERVICES.PHP */
+
+/* General Layout for Services Page */
+.services-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-group select,
+.filter-group input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#price-range-value {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.apply-filters-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.apply-filters-btn:hover {
+    background-color: #005f73;
+}
+
+/* Service List */
+.service-list {
+    width: 75%;
+}
+
+.sorting-options {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 1em;
+}
+
+.sorting-options label {
+    font-weight: bold;
+    color: #333;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Service Card (Specific for services.php) */
+.service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price, .duration {
+    display: block;
+    font-size: 1em;
+    color: #008CBA;
+    margin-bottom: 5px;
+}
+
+.service-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service-card .cta-btn {
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+
+
+/* FOR BOOKING.PHP */
+
+/* Booking Page Styles */
+.booking-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.step {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #999;
+    flex-grow: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+.form-step {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.time-slots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.time-slot {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.time-slot:hover,
+.time-slot.active {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.next-btn,
+.confirm-btn {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+.prev-btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.summary {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FOR USER DASHBOARD */
+
+/* User Dashboard Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Navigation */
+.dashboard-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    padding: 15px;
+    border-radius: 5px;
+    flex-wrap: wrap; /* Allow the items to wrap if the space is too tight */
+    gap: 15px; /* Adds space between items */
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* This ensures the items will wrap to the next line if needed */
+    gap: 15px; /* Space between the links */
+}
+
+.dashboard-nav li {
+    margin: 0;
+}
+
+.dashboard-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Ensure the links are block-level elements */
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect on Navigation Links */
+.dashboard-nav a:hover {
+    background-color: #2980b9;
+}
+
+
+/* Main Content Area */
+.dashboard-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Appointment Cards */
+.appointment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card p {
+    margin-bottom: 15px;
+}
+
+.appointment-card .appointment-date,
+.appointment-card .appointment-time {
+    font-weight: bold;
+}
+
+.appointment-card button {
+    background-color: #008CBA;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-card button:hover {
+    background-color: #005f73;
+}
+
+.appointment-card .cancel-btn {
+    background-color: #d9534f;
+}
+
+.appointment-card .cancel-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Account Settings */
+.settings-options {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-settings,
+.change-password {
+    width: 48%;
+}
+
+.profile-settings form,
+.change-password form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings form input,
+.change-password form input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.profile-settings button,
+.change-password button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-settings button:hover,
+.change-password button:hover {
+    background-color: #005f73;
+}
+
+/* Promotions & Rewards */
+.promotions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.promotion-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-card p {
+    font-size: 1.1em;
+}
+
+.promotion-card .promotion-expiry {
+    font-weight: bold;
+    color: #008CBA;
+}
+
+
+/* FOR ADMIN DASHBOARD */
+
+/* General Admin Dashboard Container */
+.admin-dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Admin Dashboard Header */
+.admin-dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-dashboard-header h1 {
+    font-size: 2.8em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Admin Dashboard Navigation */
+.admin-dashboard-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.admin-dashboard-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.admin-dashboard-nav li {
+    margin: 0;
+}
+
+.admin-dashboard-nav a {
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-dashboard-nav a:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.admin-dashboard-main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Left Column - Stats Cards */
+.admin-dashboard-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Stats Cards */
+.admin-stats-card {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-stats-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.admin-stats-card h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.admin-stats-card p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Right Column - Main Content */
+.admin-dashboard-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Appointment Management Section */
+.admin-appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-appointments h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Appointment Table */
+.admin-appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-appointment-table th,
+.admin-appointment-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-appointment-table th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.admin-appointment-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Account Management Section */
+.admin-account-settings {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.admin-profile-settings,
+.admin-change-password {
+    width: 48%;
+}
+
+.admin-profile-settings form,
+.admin-change-password form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-profile-settings form input,
+.admin-change-password form input {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin-profile-settings button,
+.admin-change-password button {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-profile-settings button:hover,
+.admin-change-password button:hover {
+    background-color: #005f73;
+}
+
+/* Promotions & Rewards */
+.admin-promotions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-promotion-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-promotion-card p {
+    font-size: 1.1em;
+}
+
+.admin-promotion-card .promotion-expiry {
+    font-weight: bold;
+    color: #008CBA;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    .admin-dashboard-main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-dashboard-left-column,
+    .admin-dashboard-right-column {
+        width: 100%;
+    }
+}
